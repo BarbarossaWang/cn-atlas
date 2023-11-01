@@ -38,25 +38,26 @@ Each province has four fields in `provinces` object:
 
 ## cn-atlas.json
 
-[Download](./cn-atlas.json)
+
+[Download](https://github.com/BarbarossaWang/cn-altas/releases/download/v0.1.0/cn-atlas.json)
 
 A [TopoJSON file](https://github.com/topojson/topojson-specification/blob/master/README.md#21-topology-objects) containing the geometry collection `prefetures`, `provinces`, `nation`. The geometry is quantized and simplified, but not projected. 
 
 ## prefectures.json
 
-[Download](./prefectures.json)
+[Download](https://github.com/BarbarossaWang/cn-altas/releases/download/v0.1.0/prefectures.json)
 
 A [GeoJSON file](https://geojson.org) containing the geometry object `prefetures`. The geometry is quantized and simplified, but not projected.
 
 ## provinces.json
 
-[Download](./provinces.json)
+[Download](https://github.com/BarbarossaWang/cn-altas/releases/download/v0.1.0/provinces.json)
 
 A [GeoJSON file](https://geojson.org) containing the geometry object `provinces`. The geometry is quantized and simplified, but not projected.
 
 ## nation.json
 
-[Download](./nation.json)
+[Download](https://github.com/BarbarossaWang/cn-altas/releases/download/v0.1.0/nation.json)
 
 A [GeoJSON file](https://geojson.org) containing the geometry object `nation`. The geometry is quantized and simplified, but not projected.
 
