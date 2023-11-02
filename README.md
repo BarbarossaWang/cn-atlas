@@ -2,11 +2,32 @@
 
 This repository provides a convenient redistribution of China's cartographic boundary shapfiles that derived from the [ruiduobao/shengshixian.com](https://github.com/ruiduobao/shengshixian.com), 2023 edition as TopoJSON and GeoJSON.
 
-## Usage
+## cn-atlas.json
 
-- [Using Chhina Atlas GeoJSON/TopoJSON plot map in browser](https://observablehq.com/d/4f3ceefc6222475f)
+[Download](https://unpkg.com/cn-atlas/cn-atlas.json)
 
-## File Formats
+A [TopoJSON file](https://github.com/topojson/topojson-specification/blob/master/README.md#21-topology-objects) containing the geometry collection `prefetures`, `provinces`, `nation`. The geometry is quantized and simplified, but not projected. 
+
+## prefectures.json
+
+[Download](https://unpkg.com/cn-atlas/prefectures.json)
+
+A [GeoJSON file](https://geojson.org) containing the geometry object `prefetures`. The geometry is quantized and simplified, but not projected.
+
+## provinces.json
+
+[Download](https://unpkg.com/cn-atlas/provinces.json)
+
+A [GeoJSON file](https://geojson.org) containing the geometry object `provinces`. The geometry is quantized and simplified, but not projected.
+
+## nation.json
+
+[Download](https://unpkg.com/cn-atlas/nation.json)
+
+A [GeoJSON file](https://geojson.org) containing the geometry object `nation`. The geometry is quantized and simplified, but not projected.
+
+
+## Data Formats
 
 Each prefecture has four fields in `prefecture` object:
 - `prefecture.id`: the six-digit [administrative division codes](https://en.wikipedia.org/wiki/Administrative_division_codes_of_the_People%27s_Republic_of_China), such as `"110000"`
@@ -35,31 +56,30 @@ Each province has four fields in `provinces` object:
 
 ![nation overview](./img/nation.png)
 
+## Usage
 
-## cn-atlas.json
+[Using Chhina Atlas GeoJSON/TopoJSON plot map in browser](https://observablehq.com/d/4f3ceefc6222475f)
 
+### Fetch data from CDN
 
-[Download](https://github.com/BarbarossaWang/cn-altas/releases/download/v0.1.0/cn-atlas.json)
+```js
+cnAtlas = fetch("https://unpkg.com/cn-atlas/cn-atlas.json").then((response) => response.json())
 
-A [TopoJSON file](https://github.com/topojson/topojson-specification/blob/master/README.md#21-topology-objects) containing the geometry collection `prefetures`, `provinces`, `nation`. The geometry is quantized and simplified, but not projected. 
+console.log(cnAtlas)
+```
 
-## prefectures.json
+### Donwload data by NPM
 
-[Download](https://github.com/BarbarossaWang/cn-altas/releases/download/v0.1.0/prefectures.json)
+```sh
+npm instal cn-atlas
+```
 
-A [GeoJSON file](https://geojson.org) containing the geometry object `prefetures`. The geometry is quantized and simplified, but not projected.
+```js
+import cnAtlas from 'cn-atlas';
+import { nation, provinces, prefectures } from 'cn-atlas';
 
-## provinces.json
-
-[Download](https://github.com/BarbarossaWang/cn-altas/releases/download/v0.1.0/provinces.json)
-
-A [GeoJSON file](https://geojson.org) containing the geometry object `provinces`. The geometry is quantized and simplified, but not projected.
-
-## nation.json
-
-[Download](https://github.com/BarbarossaWang/cn-altas/releases/download/v0.1.0/nation.json)
-
-A [GeoJSON file](https://geojson.org) containing the geometry object `nation`. The geometry is quantized and simplified, but not projected.
+console.log(cnAtlas)
+```
 
 ## Credit
 
