@@ -1,0 +1,26 @@
+{
+  "name": "cn-atlas",
+  "version": "0.1.0",
+  "description": "Pre-built China administrative boundaries GeoJSON/TopoJSON",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarbarossaWang/cn-atlas.git"
+  },
+  "keywords": [
+    "geojson",
+    "topojson",
+    "china",
+    "boundary"
+  ],
+  "author": "Amll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarbarossaWang/cn-atlas/issues"
+  },
+  "homepage": "https://github.com/BarbarossaWang/cn-atlas#readme"
+}
